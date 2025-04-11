@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cout;
 using std::endl;
@@ -22,7 +22,7 @@ void main()
 	setlocale(LC_ALL, "");
 	int n;
 #ifdef SC
-	cout << "Ââåäèòå ÷èñëî: ";cin >> n;cout << endl;n++;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;cout << endl;n++;
 	setlocale(LC_ALL, "C");
 	for (int i = 0; i <= n; i++)
 	{
@@ -49,7 +49,7 @@ void main()
 #endif
 #ifdef HC
 	setlocale(LC_ALL, "");
-	cout << "Ââåäèòå ÷èñëî: ";cin >> n;cout << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;cout << endl;
 	for (int i = 0; i < n * n; i++)
 	{
 		for (int l = 0; l < n * n; l++)cout << (((i / n) + (l / n)) & 1 ? "  " : "X ");cout << endl;
@@ -59,17 +59,17 @@ void main()
 	int a;
 	int b;
 
-	cout << "Äî îáìåíà:" << endl; 
+	cout << "Ð”Ð¾ Ð¾Ð±Ð¼ÐµÐ½Ð°:" << endl; 
 	cout << "a = "; cin >> a; 
 	cout << "b = "; cin >> b; cout << endl;
 	a ^= b;
 	b ^= a;
 	a ^= b;
-	cout << "Ïîñëå îáìåíà: a = " << a << ", b = " << b << endl;
+	cout << "ÐŸÐ¾ÑÐ»Ðµ Ð¾Ð±Ð¼ÐµÐ½Ð°: a = " << a << ", b = " << b << endl;
 #endif
 #ifdef PASKAL
-	cout << "Ââåäèòå ãëóáèíó òðåóãîëüíèêà Ïàñêàëÿ: ";cin >> n;
-	if (n <= 0)cout << "Ãëóáèíà äîëæíà áûòü ïîëîæèòåëüíûì ÷èñëîì." << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð»ÑƒÐ±Ð¸Ð½Ñƒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° ÐŸÐ°ÑÐºÐ°Ð»Ñ: ";cin >> n;
+	if (n <= 0)cout << "Ð“Ð»ÑƒÐ±Ð¸Ð½Ð° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼ Ñ‡Ð¸ÑÐ»Ð¾Ð¼." << endl;
 	for (int i = 0; i < n; i++) 
 	{
 		for (int j = 0; j < n - i - 1; j++)cout << " ";
